@@ -38,7 +38,7 @@ return 1;
 puts ("connection accepted");
 
 read_size= recv(client_sock,client_message,3000,0);
-if(strcmp(client_message,"girl")==0) {
+if(strcmp(client_message,"morning")==0) {
 	serversocket1=socket(AF_INET,SOCK_STREAM,0);
 	server1.sin_family=AF_INET;
 	server1.sin_addr.s_addr=inet_addr("192.168.80.133");
@@ -53,7 +53,7 @@ if(strcmp(client_message,"girl")==0) {
 	return 1;
 	}
 close(serversocket1);
-} else if(strcmp(client_message,"boy")==0) {
+} else if(strcmp(client_message,"night")==0) {
 
 	serversocket2=socket(AF_INET,SOCK_STREAM,0);
         server2.sin_family=AF_INET;
